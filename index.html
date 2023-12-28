@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Website</title>
+</head>
+<body>
+
+  <header>
+    <h1>Task 1</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="index.html">Login</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Login Form -->
+    <section id="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+        <button type="button" onclick="logout()">Logout</button>
+      </form>
+    </section>
+<section id="login">
+  <h2>Register</h2>
+  <form id="loginForm" method="post" action="register.php">
+    <label for="reg_username">Username:</label>
+    <input type="text" id="reg_username" name="username" required>
+
+    <label for="reg_password">Password:</label>
+    <input type="password" id="reg_password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
